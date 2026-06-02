@@ -1,0 +1,32 @@
+{
+  "name": "ai-friends-party-game",
+  "version": "0.1.0",
+  "description": "Private AI-powered social party game for close friend groups: rooms, phone join, voting, AI host, memory, WhatsApp-style profiles.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "check": "node --check server.js && node --check lib/ai.js && node --check lib/gameModes.js && node --check lib/memory.js && node --check lib/whatsapp.js && node --check public/app.js && node scripts/smoke-test.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "party-game",
+    "socket.io",
+    "llm",
+    "whatsapp",
+    "social-deduction",
+    "roast",
+    "arabic"
+  ],
+  "author": "Anis for Khaled",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
